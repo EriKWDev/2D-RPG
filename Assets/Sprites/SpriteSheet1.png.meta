@@ -1,0 +1,472 @@
+fileFormatVersion: 2
+guid: fc12291c9538598409c2883b12ad1146
+timeCreated: 1468504506
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Angie_Idle_01
+    21300002: Angie_Idle_02
+    21300004: Angie_Idle_03
+    21300006: Pudding_Idle_01
+    21300008: Pudding_Idle_02
+    21300010: Pudding_Idle_03
+    21300012: Text_Bubble_01
+    21300014: Exclamation_Mark_01
+    21300016: Text_Bubble_Handle_01
+    21300018: Block_Red_U_01
+    21300020: Block_Red_D_01
+    21300022: Block_Red_L_01
+    21300024: Block_Red_R_01
+    21300026: Block_Red_LUC_01
+    21300028: Block_Red_RUC_01
+    21300030: Block_Red_LDC_01
+    21300032: Block_Red_RDC_01
+    21300034: Grass_Full_Center_01
+    21300036: Block_Red_Test_01
+    21300038: Block_Red_LUC_02
+    21300040: Block_Red_LDC_02
+    21300042: Block_Red_RDC_02
+    21300044: Block_Red_RUC_02
+    21300046: Block_Red_Full_Center_01
+    21300048: Grass_U_01
+    21300050: Grass_LUC_01
+    21300052: Grass_RUC_01
+    21300054: Angie_Running_01
+    21300056: Angie_Running_02
+    21300058: Angie_Running_03
+    21300060: Angie_Running_05
+    21300062: Angie_Running_06
+    21300064: Angie_Running_07
+    21300066: Angie_Walking_01
+    21300068: Pudding_Idle_04
+    21300070: Pudding_Idle_05
+    21300072: Pudding_Walking_01
+    21300074: Pudding_Walking_02
+    21300076: Pudding_Walking_03
+    21300078: TextBox1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 16
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Angie_Idle_01
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1928
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 14}
+        - {x: -10, y: 5}
+        - {x: -10, y: -4}
+        - {x: -5, y: -14}
+        - {x: 2, y: -14}
+        - {x: 7, y: -12}
+        - {x: 9, y: 1}
+        - {x: 9, y: 4}
+        - {x: 4, y: 14}
+    - name: Angie_Idle_02
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1928
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 14}
+        - {x: -10, y: 5}
+        - {x: -10, y: -4}
+        - {x: -5, y: -14}
+        - {x: 2, y: -14}
+        - {x: 7, y: -12}
+        - {x: 9, y: 1}
+        - {x: 9, y: 4}
+        - {x: 4, y: 14}
+    - name: Angie_Idle_03
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1928
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 14}
+        - {x: -10, y: 5}
+        - {x: -10, y: -4}
+        - {x: -5, y: -14}
+        - {x: 2, y: -14}
+        - {x: 7, y: -12}
+        - {x: 9, y: 1}
+        - {x: 9, y: 4}
+        - {x: 4, y: 14}
+    - name: Pudding_Idle_01
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1808
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 14}
+        - {x: -10, y: 14}
+        - {x: -10, y: -8}
+        - {x: -5, y: -14}
+        - {x: 3, y: -14}
+        - {x: 9, y: -4}
+        - {x: 9, y: 13}
+    - name: Pudding_Idle_02
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1808
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 14}
+        - {x: -10, y: 14}
+        - {x: -10, y: -8}
+        - {x: -5, y: -14}
+        - {x: 3, y: -14}
+        - {x: 9, y: -4}
+        - {x: 9, y: 13}
+    - name: Pudding_Idle_03
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1808
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 14}
+        - {x: -10, y: 14}
+        - {x: -10, y: -8}
+        - {x: -5, y: -14}
+        - {x: 3, y: -14}
+        - {x: 9, y: -4}
+        - {x: 9, y: 13}
+    - name: Text_Bubble_01
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1891
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Angie_Running_01
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1928
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 1}
+        - {x: -11, y: -10}
+        - {x: -8, y: -14}
+        - {x: 7, y: -14}
+        - {x: 11, y: -9}
+        - {x: 11, y: 7}
+        - {x: 5, y: 14}
+        - {x: -6, y: 14}
+        - {x: -10, y: 5}
+    - name: Angie_Running_02
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1928
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 14}
+        - {x: -12, y: 1}
+        - {x: -12, y: -9}
+        - {x: -3, y: -14}
+        - {x: 7, y: -14}
+        - {x: 11, y: -2}
+        - {x: 11, y: 4}
+        - {x: 7, y: 14}
+    - name: Angie_Running_03
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1928
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 14}
+        - {x: -7, y: 14}
+        - {x: -14, y: 1}
+        - {x: -14, y: -5}
+        - {x: -4, y: -14}
+        - {x: 3, y: -14}
+        - {x: 5, y: -13}
+        - {x: 11, y: -3}
+        - {x: 11, y: 0}
+    - name: Angie_Running_05
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1928
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 14}
+        - {x: -12, y: 1}
+        - {x: -12, y: -9}
+        - {x: -10, y: -12}
+        - {x: -3, y: -14}
+        - {x: 4, y: -14}
+        - {x: 9, y: -9}
+        - {x: 9, y: 8}
+        - {x: 7, y: 14}
+    - name: Angie_Running_06
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1928
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 14}
+        - {x: -12, y: 0}
+        - {x: -12, y: -11}
+        - {x: -5, y: -14}
+        - {x: 5, y: -14}
+        - {x: 9, y: -5}
+        - {x: 9, y: 8}
+        - {x: 5, y: 14}
+    - name: Angie_Running_07
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1928
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 14}
+        - {x: -10, y: 5}
+        - {x: -10, y: -9}
+        - {x: -7, y: -14}
+        - {x: 5, y: -14}
+        - {x: 10, y: -10}
+        - {x: 10, y: 6}
+        - {x: 7, y: 14}
+    - name: Angie_Walking_01
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1928
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 14}
+        - {x: -8, y: 14}
+        - {x: -10, y: 5}
+        - {x: -10, y: -7}
+        - {x: -3, y: -14}
+        - {x: 3, y: -14}
+        - {x: 6, y: -13}
+        - {x: 9, y: 3}
+    - name: Pudding_Idle_04
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1808
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 14}
+        - {x: -10, y: 14}
+        - {x: -10, y: -7}
+        - {x: -6, y: -13}
+        - {x: -5, y: -14}
+        - {x: 3, y: -14}
+        - {x: 9, y: -4}
+        - {x: 9, y: 10}
+        - {x: 8, y: 12}
+    - name: Pudding_Idle_05
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1808
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 15}
+        - {x: -10, y: -8}
+        - {x: -6, y: -14}
+        - {x: 5, y: -14}
+        - {x: 9, y: 1}
+        - {x: 9, y: 11}
+        - {x: 5, y: 15}
+    - name: Pudding_Walking_01
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1808
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: -13}
+        - {x: -5, y: -14}
+        - {x: 4, y: -14}
+        - {x: 9, y: -8}
+        - {x: 9, y: 11}
+        - {x: 8, y: 14}
+        - {x: -11, y: 14}
+        - {x: -11, y: -5}
+    - name: Pudding_Walking_02
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1808
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 10}
+        - {x: -11, y: 2}
+        - {x: -9, y: -10}
+        - {x: -5, y: -14}
+        - {x: 1, y: -14}
+        - {x: 9, y: -12}
+        - {x: 9, y: 14}
+        - {x: -5, y: 14}
+    - name: Pudding_Walking_03
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1808
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 14}
+        - {x: -11, y: 13}
+        - {x: -11, y: -1}
+        - {x: -10, y: -7}
+        - {x: -4, y: -14}
+        - {x: 0, y: -14}
+        - {x: 4, y: -13}
+        - {x: 9, y: -4}
+        - {x: 9, y: 9}
+        - {x: 7, y: 14}
+    - name: TextBox1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1835
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      outline:
+      - - {x: -29, y: 16}
+        - {x: -31, y: 14}
+        - {x: -31, y: -14}
+        - {x: -29, y: -16}
+        - {x: 31, y: -16}
+        - {x: 31, y: 16}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
