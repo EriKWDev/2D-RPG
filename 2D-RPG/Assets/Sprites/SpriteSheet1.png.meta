@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: fc12291c9538598409c2883b12ad1146
+timeCreated: 1468483399
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Angie_Idle_01
+    21300002: Angie_Idle_02
+    21300004: Angie_Idle_03
+    21300006: Pudding_Idle_01
+    21300008: Pudding_Idle_02
+    21300010: Pudding_Idle_03
+    21300012: Text_Bubble_01
+    21300014: Exclamation_Mark_01
+    21300016: Text_Bubble_Handle_01
+    21300018: Block_Red_U_01
+    21300020: Block_Red_D_01
+    21300022: Block_Red_L_01
+    21300024: Block_Red_R_01
+    21300026: Block_Red_LUC_01
+    21300028: Block_Red_RUC_01
+    21300030: Block_Red_LDC_01
+    21300032: Block_Red_RDC_01
+    21300034: Grass_Full_Center_01
+    21300036: Block_Red_Test_01
+    21300038: Block_Red_LUC_02
+    21300040: Block_Red_LDC_02
+    21300042: Block_Red_RDC_02
+    21300044: Block_Red_RUC_02
+    21300046: Block_Red_Full_Center_01
+    21300048: Grass_U_01
+    21300050: Grass_LUC_01
+    21300052: Grass_RUC_01
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 16
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Angie_Idle_01
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1928
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 14}
+        - {x: -10, y: -14}
+        - {x: 9, y: -14}
+        - {x: 9, y: 14}
+    - name: Angie_Idle_02
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1928
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 14}
+        - {x: -10, y: -14}
+        - {x: 9, y: -14}
+        - {x: 9, y: 14}
+    - name: Angie_Idle_03
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1928
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 14}
+        - {x: -10, y: -14}
+        - {x: 9, y: -14}
+        - {x: 9, y: 14}
+    - name: Pudding_Idle_01
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1808
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 14}
+        - {x: -10, y: -7}
+        - {x: -9, y: -10}
+        - {x: -5, y: -14}
+        - {x: 4, y: -14}
+        - {x: 9, y: -4}
+        - {x: 9, y: 14}
+    - name: Pudding_Idle_02
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1808
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 14}
+        - {x: -10, y: -7}
+        - {x: -9, y: -10}
+        - {x: -5, y: -14}
+        - {x: 4, y: -14}
+        - {x: 9, y: -4}
+        - {x: 9, y: 14}
+    - name: Pudding_Idle_03
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1808
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 14}
+        - {x: -10, y: -7}
+        - {x: -9, y: -10}
+        - {x: -5, y: -14}
+        - {x: 4, y: -14}
+        - {x: 9, y: -4}
+        - {x: 9, y: 14}
+    - name: Text_Bubble_01
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1891
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Grass_U_01
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1745
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Grass_LUC_01
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1745
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Grass_RUC_01
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1745
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
