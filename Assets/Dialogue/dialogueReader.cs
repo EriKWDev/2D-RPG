@@ -14,7 +14,7 @@ public class dialogueReader : MonoBehaviour {
 
 	public void Start() {
 		audioSource = GetComponent<AudioSource> ();
-		StartCoroutine ("StartDialogue", theDialogue);
+		StartCoroutine (StartDialogue(theDialogue));
 	}
 
 	public IEnumerator StartDialogue(Dialogue dialogue) {
@@ -30,9 +30,9 @@ public class dialogueReader : MonoBehaviour {
 	}
 
 	public IEnumerator InitiateSpeaker(Dialogue.Speaker speaker) {
-		nameTextBox.text = speaker.name;
-
-		//audioSource.clip = gameManager.GetVoiceFromName(speaker.name);                        <--------- FIX GET VOICE ( LETTER SOUND ) ---------------------------
+		if(nameTextBox != null)
+			nameTextBox.text = speaker.name;
+		audioSource.clip = letterSound;
 
 		bool firstLine = true;
 		foreach (Dialogue.Line line in speaker.lines) {
@@ -55,6 +55,7 @@ public class dialogueReader : MonoBehaviour {
 		}
 
 		yield return new WaitForSeconds (line.delay);
+
 		if (line.clearAllAfterDelay) {
 			textBox.text = "";
 		}

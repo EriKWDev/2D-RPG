@@ -74,10 +74,10 @@ public class SheepControllerScript : MonoBehaviour {
 
 		if (Input.GetKeyUp (KeyCode.LeftControl)) {
 			Camera.main.GetComponent<PixelCamera> ().player = otherPlayer.transform;
-			GetComponent<BeBehind> ().enabled = true;
+			this.tag = "Untagged";
+			otherPlayer.tag = "Player";
 			otherPlayer.GetComponent<SheepControllerScript> ().facingRight = true;
 			otherPlayer.transform.localScale = Vector3.one;
-			otherPlayer.GetComponent<BeBehind> ().enabled = false;
 			otherPlayer.GetComponent<SheepControllerScript> ().enabled = true;
 			GetComponent<SheepControllerScript> ().enabled = false;
 		}
