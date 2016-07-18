@@ -8,7 +8,14 @@ public class CameraFollow : MonoBehaviour {
 	public float lookAheadDstX;
 	public float lookSmoothTimeX;
 	public float verticalSmoothTime;
+	public float smoothDamp;
+	public float orthographicSmooth;
 	public Vector2 focusAreaSize;
+
+	[HideInInspector]
+	public bool changeCenter = false;
+	[HideInInspector]
+	public Vector3 newCenter;
 
 	FocusArea focusArea;
 
@@ -21,13 +28,17 @@ public class CameraFollow : MonoBehaviour {
 	bool lookAheadStopped;
 
 	void Start() {
-		focusArea = new FocusArea (target.collider.bounds, focusAreaSize);
+		focusArea = new FocusArea (target.boxCollider.bounds, focusAreaSize);
 	}
 
 	void LateUpdate() {
-		focusArea.Update (target.collider.bounds);
+		focusArea.Update (target.boxCollider.bounds);
 
 		Vector2 focusPosition = focusArea.centre + Vector2.up * verticalOffset;
+			
+		if(changeCenter) {
+			focusPosition = new Vector3 (newCenter.x, newCenter.y);
+		}
 
 		if (focusArea.velocity.x != 0) {
 			lookAheadDirX = Mathf.Sign (focusArea.velocity.x);
@@ -48,7 +59,7 @@ public class CameraFollow : MonoBehaviour {
 
 		focusPosition.y = Mathf.SmoothDamp (transform.position.y, focusPosition.y, ref smoothVelocityY, verticalSmoothTime);
 		focusPosition += Vector2.right * currentLookAheadX;
-		transform.position = (Vector3)focusPosition + Vector3.forward * -10;
+		transform.position = Vector3.Lerp (transform.position, (Vector3)focusPosition + Vector3.forward * -10, Time.deltaTime * smoothDamp);
 	}
 
 	void OnDrawGizmos() {
