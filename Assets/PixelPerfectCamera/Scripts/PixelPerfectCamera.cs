@@ -18,6 +18,8 @@ using UnityEditor;
 [RequireComponent(typeof(Camera))]
 public class PixelPerfectCamera : MonoBehaviour {
 
+    public static int PIXELS_PER_UNIT = 100;
+
     public enum Dimension {Width, Height};
     public enum ConstraintType {None, Horizontal, Vertical};
 
@@ -30,7 +32,8 @@ public class PixelPerfectCamera : MonoBehaviour {
     public float targetCameraHalfWidth = 2.0f;
     public float targetCameraHalfHeight = 1.5f;
     public bool pixelPerfect = false;
-    public float assetsPixelsPerUnit = 100;
+    public bool retroSnap = false;
+    public float assetsPixelsPerUnit = PIXELS_PER_UNIT;
     public bool showHUD;
 
     // Output
@@ -154,6 +157,7 @@ public class PixelPerfectCamera : MonoBehaviour {
         adjustCameraFOV();
     }
 
+
     void OnValidate () {
         maxCameraHalfWidth = Math.Max(maxCameraHalfWidth, 0.01f);
         maxCameraHalfHeight = Math.Max(maxCameraHalfHeight, 0.01f);
@@ -162,14 +166,15 @@ public class PixelPerfectCamera : MonoBehaviour {
         adjustCameraFOV();
     }
 
-#if UNITY_EDITOR
-    void LateUpdate () {
+//#if UNITY_EDITOR
+    void Update () {
         if (res.width != cam.pixelWidth || res.height != cam.pixelHeight)
         {
             adjustCameraFOV();
         }
 	}
-#endif
+ //#endif
+
 
     // http://docs.unity3d.com/Manual/gui-Basics.html
     void OnGUI () {
@@ -180,6 +185,7 @@ public class PixelPerfectCamera : MonoBehaviour {
 
             // Make the first button. If it is pressed, update
             pixelPerfect = GUI.Toggle(new Rect(20, 40, 90, 20), pixelPerfect, new GUIContent("Pixel perfect"));
+            retroSnap = GUI.Toggle(new Rect(20, 60, 90, 20), retroSnap, new GUIContent("Retro Snap"));
             if (GUI.changed) {
                 adjustCameraFOV();
             }
@@ -202,6 +208,7 @@ public class PixelPerfectCameraEditor : Editor
     SerializedProperty targetCameraHalfWidth;
     SerializedProperty targetCameraHalfHeight;
     SerializedProperty pixelPerfect;
+    SerializedProperty retroSnap;
     SerializedProperty assetsPixelsPerUnit;
     SerializedProperty showHUD;
 
@@ -215,6 +222,7 @@ public class PixelPerfectCameraEditor : Editor
         targetCameraHalfWidth = serializedObject.FindProperty("targetCameraHalfWidth");
         targetCameraHalfHeight = serializedObject.FindProperty("targetCameraHalfHeight");
         pixelPerfect = serializedObject.FindProperty("pixelPerfect");
+        retroSnap = serializedObject.FindProperty("retroSnap");
         assetsPixelsPerUnit = serializedObject.FindProperty("assetsPixelsPerUnit");
         showHUD = serializedObject.FindProperty("showHUD");
     }
@@ -247,10 +255,16 @@ public class PixelPerfectCameraEditor : Editor
         EditorGUI.EndDisabledGroup();
         EditorGUILayout.EndHorizontal();
 
+        // Pixels Per Unit
+        EditorGUILayout.PropertyField(assetsPixelsPerUnit);
+
         // Pixel Perfect toggle
         pixelPerfect.boolValue = EditorGUILayout.Toggle(new GUIContent("Pixel Perfect", 
             "Makes the camera's pixels per unit to be a multiple of the assets' pixels per unit."), pixelPerfect.boolValue);
-        EditorGUILayout.PropertyField(assetsPixelsPerUnit);
+        
+        // RetroSnap toggle
+        retroSnap.boolValue = EditorGUILayout.Toggle(new GUIContent("Retro Snap",
+            "Makes the objects using the PixelSnap script snap to the asset's pixel grid"), retroSnap.boolValue);
 
         // Show HUD toggle
         EditorGUILayout.PropertyField(showHUD);

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8bdc4bb6161f1bc44b1d064d92c288f7
-timeCreated: 1468884241
+timeCreated: 1468923601
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -56,46 +56,21 @@ TextureImporter:
     - name: Red-Orange Girl1_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 14
+        x: 16
+        y: 16
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -7, y: 14}
-        - {x: -12, y: 14}
-        - {x: -14, y: 7}
-        - {x: -14, y: -4}
-        - {x: -6, y: -13}
-        - {x: 2, y: -13}
-        - {x: 7, y: -11}
-        - {x: 8, y: -7}
-        - {x: 8, y: 5}
-        - {x: 5, y: 11}
-    - name: Red-Orange Girl1_1
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 48
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: Red-Orange Girl1_2
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 45
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      - - {x: -6, y: 12}
+        - {x: -9, y: 6}
+        - {x: -9, y: -5}
+        - {x: -5, y: -10}
+        - {x: 10, y: -10}
+        - {x: 10, y: 7}
+        - {x: 8, y: 12}
     outline: []
   spritePackingTag: 
   userData: 

@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 709888035}
   - 212: {fileID: 709888034}
+  - 114: {fileID: 709888036}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -140,9 +141,21 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &709888036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 709888033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19ced47e94a87f4689fe689a8a490ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1443663053
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,6 +166,7 @@ GameObject:
   - 4: {fileID: 1443663055}
   - 212: {fileID: 1443663054}
   - 114: {fileID: 1443663056}
+  - 114: {fileID: 1443663057}
   m_Layer: 0
   m_Name: pixelgridTransparent
   m_TagString: Untagged
@@ -197,8 +211,9 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1443663053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4, y: 0.4, z: 0}
+  m_LocalPosition: {x: 0, y: -0.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -215,6 +230,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollSpeed: 0.2
   tileSizeZ: 1
+--- !u!114 &1443663057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1443663053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19ced47e94a87f4689fe689a8a490ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1739409201
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,14 +280,15 @@ MonoBehaviour:
   targetCameraHalfWidth: 1.24
   targetCameraHalfHeight: 2.22
   pixelPerfect: 1
+  retroSnap: 0
   assetsPixelsPerUnit: 100
-  showHUD: 0
-  cameraSize: {x: 1.1925, y: 2.0175002}
+  showHUD: 1
+  cameraSize: {x: 0.9525, y: 1.5874999}
   contraintUsed: 0
   cameraPixelsPerUnit: 200
   ratio: 2
-  nativeAssetResolution: {x: 238.5, y: 403.50003}
-  fovCoverage: 0.9616935
+  nativeAssetResolution: {x: 190.5, y: 317.49997}
+  fovCoverage: 0.76814514
 --- !u!81 &1739409203
 AudioListener:
   m_ObjectHideFlags: 0
@@ -303,7 +330,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.0175002
+  orthographic size: 1.5874999
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -326,6 +353,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

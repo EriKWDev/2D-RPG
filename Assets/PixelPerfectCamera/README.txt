@@ -1,7 +1,15 @@
-Pixel Perfect Camera
+# Pixel Perfect Camera
 -----------------------
 
-Instructions:
+Support thread::
+http://forum.unity3d.com/threads/released-free-pixel-perfect-camera.416141/
+
+How to use video:
+https://www.youtube.com/watch?v=OuTMcY3H2j8
+
+Please read the documentation inside PixelPerfectCamera.cs or PixelSnap.cs for more in-depth information.
+
+## Instructions for Pixel Perfect Camera:
 
 1) Place the PixelPerfectCamera.cs script on a 2D orthographic camera.
 
@@ -22,7 +30,7 @@ Below the controls, you can see some numbers regarding the size calculation:
 -Pixels: the resolution of the screen given as a multiple of 2 numbers. The first is the number of screen pixels an asset pixel will render to. The second is the camera resolution in asset pixels. For example: 4 x [100.5, 300.0] means that the screen resolution is [402, 1200] and it corresponds to a width of 100.5 pixels and a height of 300 pixels in asset pixels. A single asset pixel is rendered to 4 screen pixels. A non pixel-perfect resolution would have a non-integer in the place of "4".
 -Coverage: the percentage of the resulting size to the target size. This is usually 100%, which means that the resulting size is the same as the targeted one. However, if "Pixel Perfect" is enabled, the percentage may be higher or lower than 100% if the resulting size is bigger or smaller than the target size. Also, if "max width/height" restricts the size it can reduce the coverage.
 
-Usage tips:
+ Usage tips:
 
 - Start by disabling "pixel perfect" and adjust either the target width or height according to your scene. If needed, specify the "max width/height". Enable "pixel perfect". 
 
@@ -30,10 +38,29 @@ Usage tips:
 
 - When you enable "pixel perfect" mode, the resulting size may be slightly smaller or bigger than the one you set in "target size". You may want to enable "max width/height" to restrict the size.
 
+## Instructions for PixelSnap:
 
-Project set-up tips
+1) Place the script on every object that you want to snap on the pixel grid of the assets (retroSnap mode) or on the screen's pixel grid (reduce jitter mode).
 
-- If you enable PixelPerfect mode, it's best that you set all all your sprites or texture to "point (no filter)" mode. Also, in "Project settings -> Quality" disable Anti Aliasing.
+2) When the current object will be rendered by a camera, the script will look if it is a PixelPerfectCamera. If it is, it will read the retroSnap setting and render accordingly. 
+So, enable or disable the retroSnap option in the camera that uses the PixelPerfectCamera script. This will affect **all** the objects that use the PixelSnap script.
+
+3) Comment out or comment in the REDUCE_JITTER symbol on top of the script's code to disable or enable the jitter-reduction (when retroMode is disabled). By default it is disabled.
+
+4) "Retro Snap" should be used with "Pixel Perfect" enabled, otherwie jitter artifacts will occur.
+
+## Project set-up tips
+
+If you want to enable the pixel-perfect mode, make sure that your project has the following set-up:
+
+- Use an orthographic camera and throw the Pixel Perfect Camera script on it
+- Leave the sprite's scale to 1.
+- The textures of your sprites should use: point filtering, disable mip-mapping, Truecolor format
+- All your textures should have the same Pixels Per Unit
+- Make sure that the player settings of the platform(s) you are targeting don't reduce the texture size
+- In your project's quality settings: set "Full res" in Texture quality and disable Anti-Aliasing
+- DX9 samples from the edge of the texels instead of the center. This will result in all sprites rendered with 1 fragment offset. 
+  If you use DX9 you can enable "pixel snap" in default sprite shader. This will correct the half fragment offst in the vertex shader. DX 11, OpenGL etc don't have this problem.
 
 
 
