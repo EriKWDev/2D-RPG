@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: 5af1dfdc6a384d74a897a26ea2a39669
-timeCreated: 1468438109
+timeCreated: 1469007286
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - theDialogue: {instanceID: 0}
+  - textBox: {instanceID: 0}
+  - nameTextBox: {instanceID: 0}
+  - letterSound: {fileID: 8300000, guid: ecf3339b30d0f39478e5578b14bb4372, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

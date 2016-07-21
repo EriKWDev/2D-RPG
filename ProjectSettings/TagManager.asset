@@ -18,7 +18,7 @@ TagManager:
   - Map
   - Player
   - CameraZone
-  - 
+  - CameraBounds
   - 
   - 
   - 
@@ -52,7 +52,7 @@ TagManager:
   - name: Map
     uniqueID: 3274552157
     locked: 0
-  - name: Player
+  - name: Player and NPCs
     uniqueID: 995506767
     locked: 0
   - name: Decorations2
