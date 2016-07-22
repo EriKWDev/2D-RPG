@@ -144,8 +144,7 @@ namespace Com.LuisPedroFonseca.ProCamera2D
         void OnDisable()
         {
             var proCamera2DShake = (ProCamera2DShake)target;
-
-            _playModePresets = proCamera2DShake.ShakePresets;
+         	_playModePresets = proCamera2DShake.ShakePresets;
         }
 
         public override void OnInspectorGUI()

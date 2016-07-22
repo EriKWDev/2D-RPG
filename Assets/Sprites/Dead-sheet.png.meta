@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: 56315312050117342acc33d6171d9d32
-timeCreated: 1468846604
+timeCreated: 1469191574
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Sakura 1
+    21300002: _Bubble
+    21300004: _Bubble-Handle
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -28,7 +30,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
-  maxTextureSize: 2048
+  maxTextureSize: 4096
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -82,6 +84,28 @@ TextureImporter:
         - {x: 65, y: -8.5}
         - {x: 74, y: 7.5}
         - {x: 74, y: 12.5}
+    - name: _Bubble
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1893
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 1, w: 1}
+      outline: []
+    - name: _Bubble-Handle
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1891
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

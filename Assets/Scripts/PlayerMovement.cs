@@ -4,12 +4,12 @@ using System.Collections;
 [RequireComponent(typeof (Animator)), RequireComponent(typeof (Rigidbody2D)), RequireComponent(typeof (DialogueReader))]
 public class PlayerMovement : MonoBehaviour {
 
-	Rigidbody2D myRigidbody;
+	//Rigidbody2D myRigidbody;
 	Animator animator;
 	public float movementSpeed = 1f;
 
 	void Start () {
-		myRigidbody = GetComponent<Rigidbody2D> ();
+		//myRigidbody = GetComponent<Rigidbody2D> ();
 		animator = GetComponent<Animator> ();
 	}
 
