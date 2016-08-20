@@ -811,8 +811,8 @@ MonoBehaviour:
   textBox: {fileID: 861920111}
   nameTextBox: {fileID: 0}
   image: {fileID: 1269883244}
-  letterSound: {fileID: 8300000, guid: ecf3339b30d0f39478e5578b14bb4372, type: 3}
-  defaultSound: {fileID: 8300000, guid: ecf3339b30d0f39478e5578b14bb4372, type: 3}
+  letterSound: {fileID: 0}
+  defaultSound: {fileID: 0}
   isInDialogue: 0
 --- !u!82 &1450259128
 AudioSource:
@@ -974,7 +974,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.34375
+  orthographic size: 5.90625
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -1135,9 +1135,9 @@ MonoBehaviour:
   Axis: 0
   UpdateType: 0
   FollowHorizontal: 1
-  HorizontalFollowSmoothness: 0.15
+  HorizontalFollowSmoothness: 0
   FollowVertical: 1
-  VerticalFollowSmoothness: 0.15
+  VerticalFollowSmoothness: 0
   OverallOffset: {x: 0, y: 0}
   ZoomWithFOV: 0
   CurrentZoomTriggerID: 0

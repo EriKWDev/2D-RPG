@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbed25ec1fa547249bd114083ed0ae0b, type: 3}
   m_Name: RedGirl
   m_EditorClassIdentifier: 
-  timesRead: 1
+  timesRead: 0
   monologue: 1
   monologueReactivations:
   - dialogue: {fileID: 11400000}
