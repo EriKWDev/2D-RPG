@@ -1,0 +1,751 @@
+fileFormatVersion: 2
+guid: f258111de3ad6cc4ea22c7ac265b7f8e
+timeCreated: 1471782268
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Angie01
+    21300002: Angie02
+    21300004: Angie03
+    21300006: Angie04
+    21300008: Angie05
+    21300010: Angie06
+    21300012: Angie07
+    21300014: Angie08
+    21300016: Angie09
+    21300018: Angie10
+    21300020: Angie11
+    21300022: Angie12
+    21300024: Pudding01
+    21300026: Pudding02
+    21300028: Pudding03
+    21300030: Pudding04
+    21300032: Pudding05
+    21300034: Pudding06
+    21300036: Pudding07
+    21300038: Pudding08
+    21300040: Pudding09
+    21300042: Pudding10
+    21300044: Pudding11
+    21300046: Pudding12
+    21300048: Character-Sheet_0
+    21300050: Character-Sheet_1
+    21300052: Character-Sheet_2
+    21300054: Character-Sheet_3
+    21300056: Character-Sheet_4
+    21300058: Character-Sheet_5
+    21300060: Character-Sheet_6
+    21300062: Character-Sheet_7
+    21300064: Character-Sheet_8
+    21300066: Character-Sheet_9
+    21300068: Character-Sheet_10
+    21300070: Character-Sheet_11
+    21300072: Character-Sheet_12
+    21300074: Character-Sheet_13
+    21300076: Character-Sheet_14
+    21300078: Character-Sheet_15
+    21300080: Character-Sheet_16
+    21300082: Character-Sheet_17
+    21300084: Character-Sheet_18
+    21300086: Character-Sheet_19
+    21300088: Character-Sheet_20
+    21300090: Character-Sheet_21
+    21300092: Character-Sheet_22
+    21300094: Character-Sheet_23
+    21300096: Character-Sheet_27
+    21300098: Character-Sheet_28
+    21300100: Character-Sheet_29
+    21300102: Character-Sheet_30
+    21300104: Character-Sheet_31
+    21300106: Character-Sheet_32
+    21300108: Character-Sheet_33
+    21300110: Character-Sheet_34
+    21300112: Character-Sheet_35
+    21300114: Character-Sheet_36
+    21300116: Character-Sheet_37
+    21300118: Character-Sheet_38
+    21300120: Character-Sheet_24
+    21300122: Character-Sheet_25
+    21300124: Character-Sheet_26
+    21300126: Character-Sheet_39
+    21300128: Character-Sheet_40
+    21300130: Character-Sheet_41
+    21300132: Character-Sheet_42
+    21300134: Character-Sheet_43
+    21300136: Character-Sheet_44
+    21300138: Character-Sheet_45
+    21300140: Character-Sheet_46
+    21300142: Character-Sheet_47
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 16
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Character-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 7}
+        - {x: -10, y: 7}
+        - {x: -15, y: -1}
+        - {x: -15, y: -6}
+        - {x: -14, y: -10}
+        - {x: -6, y: -16}
+        - {x: 6, y: -16}
+        - {x: 8, y: -14}
+        - {x: 8, y: 6}
+    - name: Character-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 8}
+        - {x: -8, y: 8}
+        - {x: -14, y: -3}
+        - {x: -14, y: -9}
+        - {x: -6, y: -16}
+        - {x: 6, y: -16}
+        - {x: 8, y: -14}
+        - {x: 8, y: 2}
+    - name: Character-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 8}
+        - {x: -16, y: 7}
+        - {x: -16, y: -9}
+        - {x: -10, y: -16}
+        - {x: 8, y: -16}
+        - {x: 8, y: 6}
+        - {x: 6, y: 8}
+    - name: Character-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 7}
+        - {x: -12, y: 2}
+        - {x: -12, y: -8}
+        - {x: -6, y: -16}
+        - {x: 6, y: -16}
+        - {x: 8, y: -14}
+        - {x: 8, y: 0}
+        - {x: 4, y: 7}
+    - name: Character-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 8}
+        - {x: 0, y: 8}
+        - {x: -7, y: 5}
+        - {x: -12, y: -4}
+        - {x: -12, y: -6}
+        - {x: -7, y: -14}
+        - {x: -5, y: -16}
+        - {x: 6, y: -16}
+        - {x: 8, y: -14}
+        - {x: 8, y: 1}
+    - name: Character-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 8}
+        - {x: -8, y: 5}
+        - {x: -13, y: 0}
+        - {x: -13, y: -14}
+        - {x: -8, y: -16}
+        - {x: 8, y: -16}
+        - {x: 8, y: 1}
+        - {x: 2, y: 8}
+    - name: Character-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 7}
+        - {x: -8, y: -16}
+        - {x: 7, y: -16}
+        - {x: 15, y: -8}
+        - {x: 15, y: 2}
+        - {x: 7, y: 7}
+    - name: Character-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 8}
+        - {x: -8, y: 7}
+        - {x: -8, y: -16}
+        - {x: 11, y: -16}
+        - {x: 12, y: -12}
+        - {x: 12, y: 0}
+        - {x: 10, y: 8}
+    - name: Character-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 8}
+        - {x: -8, y: 6}
+        - {x: -8, y: -16}
+        - {x: 7, y: -16}
+        - {x: 13, y: -6}
+        - {x: 13, y: -1}
+        - {x: 6, y: 8}
+    - name: Character-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 8}
+        - {x: -8, y: 6}
+        - {x: -8, y: -16}
+        - {x: 7, y: -16}
+        - {x: 13, y: -6}
+        - {x: 13, y: 2}
+        - {x: 8, y: 8}
+    - name: Character-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 8}
+        - {x: -2, y: 8}
+        - {x: -8, y: 2}
+        - {x: -8, y: -16}
+        - {x: 10, y: -16}
+        - {x: 12, y: -8}
+        - {x: 12, y: -2}
+        - {x: 4, y: 6}
+    - name: Character-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 7}
+        - {x: -6, y: 3}
+        - {x: -8, y: 0}
+        - {x: -8, y: -15}
+        - {x: -7, y: -16}
+        - {x: 8, y: -16}
+        - {x: 12, y: -13}
+        - {x: 12, y: 1}
+        - {x: 10, y: 7}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

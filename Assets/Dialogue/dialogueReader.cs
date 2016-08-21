@@ -8,6 +8,7 @@ public class DialogueReader : MonoBehaviour {
 	public UnityEngine.UI.Text textBox;
 	public UnityEngine.UI.Text nameTextBox;
 	public UnityEngine.UI.Image image;
+	public UnityEngine.UI.Image panel;
 	public AudioClip letterSound;
 	public AudioClip defaultSound;
 	public bool isInDialogue = false;
@@ -15,6 +16,7 @@ public class DialogueReader : MonoBehaviour {
 	private AudioSource audioSource;
 
 	public void Start() {
+		panel.gameObject.SetActive (isInDialogue);
 		audioSource = GetComponent<AudioSource> ();
 	}
 
@@ -31,13 +33,17 @@ public class DialogueReader : MonoBehaviour {
 	public IEnumerator StartDialogue(Dialogue dialogue) {
 		textBox.text = "";
 		isInDialogue = true;
+
+		panel.gameObject.SetActive (isInDialogue);
 		yield return StartCoroutine ("InitiateSpeakers", dialogue.speakers);
 		if (dialogue.monologue && dialogue.monologueReactivations.Count > 0 && dialogue.timesRead < dialogue.monologueReactivations.Count) {
 			dialogue.timesRead++;
 		} else {
 			dialogue.timesRead = dialogue.monologueReactivations.Count;
 		}
+
 		isInDialogue = false;
+		panel.gameObject.SetActive (isInDialogue);
 	}
 
 	public IEnumerator InitiateSpeakers(List<Dialogue.Speaker> speakers) {
@@ -97,14 +103,81 @@ public class DialogueReader : MonoBehaviour {
 		}
 
 		bool skip = false;
+
+		/*
+		float[] delays = new float[line.text.Split (" ".ToCharArray ()[0]).Length];
+		for(int i = 0; i < line.text.Split (" ".ToCharArray ()[0]).Length; i++) {
+			delays [i] = Random.Range (0f, 100f);
+		}
+
+		float sum = 0f;
+		foreach (float n in delays) {
+			sum += n;	
+		}
+
+		float sum2 = 0f;
+		for (int i = 0; i < delays.Length; i++) {
+			float n = delays [i];
+			n /= sum;
+			n *= (line.text.ToCharArray ().Length / line.lettersPerSecond);
+			sum2 += n;
+			delays [i] = n;
+		}
+
+		string tmp2 = "";
+		foreach (float n in delays) {
+			tmp2 += n + ", ";	
+		}
+
+		print ("Sum :" + sum + " Sum2: " + sum2 + " Aimed Sum: " + (line.text.ToCharArray ().Length / line.lettersPerSecond) + " Delays: " + tmp2);
+
+		float timer = Time.time;
+		int j = 0;
+		foreach (string word in line.text.Split (" ".ToCharArray ()[0])) {
+			string wordWithSpace = word + " ";
+			foreach (char c in wordWithSpace.ToCharArray()) {
+				textBox.text += c;
+				if (skip == false) {
+					if (c.ToString () != " ")
+						audioSource.Play ();
+					yield return new WaitForSeconds (delays [j] / wordWithSpace.Length);
+				} 
+			}
+			j++;
+		}
+		textBox.text += " (Time: " + (Time.time - timer) + ", Aimed: " + (line.text.ToCharArray ().Length / line.lettersPerSecond) + ")";
+
+		*/
+
+		// /*
+
+		foreach (string word in line.text.Split (" ".ToCharArray ()[0])) {
+			string wordWithSpace = word + " ";
+
+			foreach (char c in wordWithSpace.ToCharArray()) {
+				textBox.text += c;
+				if (skip == false) {
+					if (c.ToString () != " ") {
+						audioSource.Play ();
+						yield return new WaitForSeconds ((line.text.ToCharArray ().Length / line.lettersPerSecond) / line.text.ToCharArray ().Length);
+					}
+				} 
+			}
+		}
+		/*
+		float secondsPerLetter = (line.text.ToCharArray ().Length / line.lettersPerSecond) / line.text.ToCharArray ().Length;
 		foreach (char c in line.text.ToCharArray()) {
 			textBox.text += c;
 			if (skip == false) {
-				if (c.ToString () != " ")
+				if (c.ToString () != " ") {
 					audioSource.Play ();
-				yield return new WaitForSeconds ((line.text.ToCharArray ().Length / line.lettersPerSecond) / line.text.ToCharArray ().Length);
+					yield return new WaitForSeconds (secondsPerLetter);
+				} else {
+					yield return new WaitForSeconds (secondsPerLetter * 5f);
+				}
 			} 
 		}
+		// */
 
 		while (!Input.anyKeyDown && !line.automaticallyGoToNExtLine) {
 			yield return null;

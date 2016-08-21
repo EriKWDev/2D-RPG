@@ -1,15 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
-public class NPCBehaviour : MonoBehaviour {
+public class Entity : MonoBehaviour {
 
 	public bool activateByKey = true;
 	public KeyCode activationKey = KeyCode.E;
+	public string name;
 
-	public AudioClip voice;
-	public Dialogue dialogue;
+	Dialogue dialogue;
 
 	bool playerIsWithinRadius;
+
+	void Start () {
+		dialogue = new Dialogue ();
+		dialogue.monologue = true;
+		List<Dialogue.Speaker> speaker = new List<Dialogue.Speaker> ();
+		List<Dialogue.Line> line = new List<Dialogue.Line> ();
+		line.Add (new Dialogue.Line ("It's a " + name, 25f, true, false, speaker[0], false, 0f, null));
+		if (name == "") {
+			name = gameObject.name;
+		}
+		speaker.Add (new Dialogue.Speaker (name, line, dialogue));
+		dialogue.speakers = speaker;
+	}
 
 	void Update () {
 		if (playerIsWithinRadius) {
@@ -25,26 +39,10 @@ public class NPCBehaviour : MonoBehaviour {
 
 	void LateUpdate () {
 		GetComponent<SpriteRenderer> ().sortingOrder = (int)(transform.position.y * -1);
-		transform.position = CoordinateToPixelPerfectPosition ((Vector2)transform.position);
 	}
 
 	void Activate () {
-		if(voice != null)
-			GameObject.FindGameObjectWithTag ("Player").GetComponent<DialogueReader> ().ReadDialogue (dialogue, voice);
-		else
-			GameObject.FindGameObjectWithTag ("Player").GetComponent<DialogueReader> ().ReadDialogue (dialogue);
-	}
-
-	void LookAtPlayer () {
-		
-	}
-
-	public float CoordinateToPixelPerfectPosition (float coord) {
-		return Mathf.Round (coord * 16f) / 16f;	
-	}
-
-	public Vector2 CoordinateToPixelPerfectPosition (Vector2 coord) {
-		return new Vector2 (Mathf.Round (coord.x * 16f) / 16f, Mathf.Round (coord.y * 16f) / 16f);
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<DialogueReader> ().ReadDialogue (dialogue);
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {

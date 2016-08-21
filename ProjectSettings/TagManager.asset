@@ -6,6 +6,7 @@ TagManager:
   tags:
   - WallJumpable
   - Through
+  - Colliders
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Player
   - CameraZone
   - CameraBounds
-  - 
+  - Colliders
   - 
   - 
   - 
