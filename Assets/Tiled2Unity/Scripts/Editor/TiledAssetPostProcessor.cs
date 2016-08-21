@@ -186,7 +186,7 @@ namespace Tiled2Unity
             // The root gameObject, at this point, seems to have "_root" appeneded to it.
             // Once the model if finished being imported it drops this postifx
             // This is something that could change without our knowledge
-            string rootName = renderer.transform.root.gameObject.name;
+			string rootName = renderer.transform.root.gameObject.name;
             int rootIndex = rootName.LastIndexOf("_root");
             if (rootIndex != -1)
             {

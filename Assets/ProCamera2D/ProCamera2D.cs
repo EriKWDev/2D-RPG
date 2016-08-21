@@ -193,7 +193,7 @@ namespace Com.LuisPedroFonseca.ProCamera2D
             if (GameCamera == null)
                 GameCamera = GetComponent<Camera>();
             if (GameCamera == null)
-                Debug.LogError("Unity Camera not set and not found on the GameObject: " + gameObject.name);
+				Debug.LogError("Unity Camera not set and not found on the GameObject: " + gameObject.name);
 
             #if PC2D_TK2D_SUPPORT
             Tk2dCam = GetComponent<tk2dCamera>();

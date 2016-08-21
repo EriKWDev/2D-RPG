@@ -26,7 +26,7 @@ namespace Tiled2Unity
             ImportBehaviour importBehavior = ImportBehaviour.FindOrCreateImportBehaviour(xmlPath);
 
             // The mesh to match
-            string meshName = renderer.name;
+			string meshName = renderer.name;
 
             // Increment our progress bar
             importBehavior.IncrementProgressBar(String.Format("Assign material: {0}", meshName));
@@ -41,7 +41,7 @@ namespace Tiled2Unity
                 // This happened before when Unity replaced whitespace with underscore in our named meshes
                 // That case is handled now, but there may be others
                 StringBuilder builder = new StringBuilder();
-                builder.AppendFormat("Could not find mesh named '{0}' for material matching\n", renderer.name);
+				builder.AppendFormat("Could not find mesh named '{0}' for material matching\n", renderer.name);
                 string choices = String.Join("\n  ", assignMaterials.Select(m => m.Attribute("mesh").Value).ToArray());
                 builder.AppendFormat("Choices are:\n  {0}", choices);
 

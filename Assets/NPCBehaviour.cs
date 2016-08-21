@@ -7,14 +7,18 @@ public class NPCBehaviour : MonoBehaviour {
 	public KeyCode activationKey = KeyCode.E;
 
 	public AudioClip voice;
-	public Dialogue dialogue;
 
 	bool playerIsWithinRadius;
+	GameObject player;
+
+	void Start () {
+		player = GameObject.FindGameObjectWithTag ("Player");
+	}
 
 	void Update () {
 		if (playerIsWithinRadius) {
 			if (activateByKey) {
-				if (Input.GetKeyDown (activationKey) && GameObject.FindGameObjectWithTag ("Player").GetComponent<DialogueReader> ().isInDialogue == false) {
+				if (Input.GetKeyDown (activationKey)) {
 					Activate ();
 				}
 			} else {
@@ -24,18 +28,22 @@ public class NPCBehaviour : MonoBehaviour {
 	}
 
 	void LateUpdate () {
-		GetComponent<SpriteRenderer> ().sortingOrder = (int)(transform.position.y * -1);
+		FixSortingLayer ();
 		transform.position = CoordinateToPixelPerfectPosition ((Vector2)transform.position);
 	}
 
-	void Activate () {
-		if(voice != null)
-			GameObject.FindGameObjectWithTag ("Player").GetComponent<DialogueReader> ().ReadDialogue (dialogue, voice);
-		else
-			GameObject.FindGameObjectWithTag ("Player").GetComponent<DialogueReader> ().ReadDialogue (dialogue);
+	void FixSortingLayer () {
+		SpriteRenderer myRenderer = GetComponent<SpriteRenderer> ();
+		myRenderer.sortingOrder = (int)(transform.position.y * -1);
+		float playerY = player.transform.position.y;
+		if (playerY < transform.position.y) {
+			myRenderer.sortingOrder = player.GetComponent<SpriteRenderer> ().sortingOrder - 1;
+		} else if (playerY > transform.position.y) {
+			myRenderer.sortingOrder = player.GetComponent<SpriteRenderer> ().sortingOrder + 1;
+		}
 	}
 
-	void LookAtPlayer () {
+	void Activate () {
 		
 	}
 

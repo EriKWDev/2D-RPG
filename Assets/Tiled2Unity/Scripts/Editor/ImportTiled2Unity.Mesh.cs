@@ -125,7 +125,7 @@ namespace Tiled2Unity
 
                 if (!String.IsNullOrEmpty(name))
                 {
-                    child.name = name;
+					child.name = name;
                 }
 
                 // Assign the child to the parent
@@ -239,9 +239,9 @@ namespace Tiled2Unity
             string parentName = GetFullGameObjectName(xform.parent);
 
             if (String.IsNullOrEmpty(parentName))
-                return xform.name;
+				return xform.name;
 
-            return String.Format("{0}/{1}", parentName, xform.name);
+			return String.Format("{0}/{1}", parentName, xform.name);
         }
 
         private void AddCollidersTo(GameObject gameObject, bool isTrigger, XElement xml)
@@ -371,7 +371,7 @@ namespace Tiled2Unity
             UnityEngine.Object[] objects = AssetDatabase.LoadAllAssetsAtPath(objPath);
             foreach (var obj in objects)
             {
-                if (obj.name != copyFromName)
+				if (obj.name != copyFromName)
                     continue;
 
                 // We have a match but is it a game object?
@@ -384,7 +384,7 @@ namespace Tiled2Unity
                 shaderProps.InitialOpacity = opacity;
 
                 // Reset the name so it is not decorated by the Instantiate call
-                gameObj.name = obj.name;
+				gameObj.name = obj.name;
                 return gameObj;
             }
 

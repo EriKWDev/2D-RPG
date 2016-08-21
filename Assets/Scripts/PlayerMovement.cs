@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof (Animator)), RequireComponent(typeof (DialogueReader))]
+[RequireComponent(typeof (Animator))]
 public class PlayerMovement : MonoBehaviour {
 
 	public Player currentPlayer = Player.Angie;
-
 	Animator playerAnimator;
 
 	public enum Player {
@@ -34,36 +33,33 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void Walk () {
-		if (GetComponent<DialogueReader> ().isInDialogue == false) {
-			Vector2 input = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
-			Vector2 velocity = input * Time.deltaTime * movementSpeed;
+		Vector2 input = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
+		Vector2 velocity = input * Time.deltaTime * movementSpeed;
 
-			playerAnimator.SetBool ("isWalking", input != Vector2.zero ? true : false);
-			if (input != Vector2.zero) {
-				playerAnimator.SetFloat ("inputX", input.x);
-				playerAnimator.SetFloat ("inputY", input.y);
+		playerAnimator.SetBool ("isWalking", input != Vector2.zero ? true : false);
+		if (input != Vector2.zero) {
+			playerAnimator.SetFloat ("inputX", input.x);
+			playerAnimator.SetFloat ("inputY", input.y);
 
 
-				if (input.x > 0) {
-					direction = "right";
-				} else if (input.x < 0) {
-					direction = "left";
-				}
-				if (input.y > 0) {
-					direction = "up";
-				} else if (input.y < 0) {
-					direction = "down";
-				}
+			if (input.x > 0) {
+				direction = "right";
+			} else if (input.x < 0) {
+				direction = "left";
+			}
+			if (input.y > 0) {
+				direction = "up";
+			} else if (input.y < 0) {
+				direction = "down";
 			}
 
-			Collider2D[] tmp = Physics2D.OverlapCircleAll ((Vector2)transform.position, 0.5f);
-
-			if(canMove)
-				transform.Translate (CoordinateToPixelPerfectPosition (velocity));
-
-		} else {
-			playerAnimator.SetBool ("isWalking", false);
+			// print (direction);
 		}
+
+		// Collider2D[] tmp = Physics2D.OverlapCircleAll ((Vector2)transform.position, 0.5f);
+
+		if(canMove)
+			transform.Translate (CoordinateToPixelPerfectPosition (velocity));
 	}
 
 	void UpdatePlayerSprite () {

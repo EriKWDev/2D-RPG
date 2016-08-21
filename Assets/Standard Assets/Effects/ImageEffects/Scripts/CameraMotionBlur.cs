@@ -346,7 +346,7 @@ namespace UnityStandardAssets.ImageEffects
 
         Camera GetTmpCam () {
             if (tmpCam == null) {
-                string name = "_" + _camera.name + "_MotionBlurTmpCam";
+				string name = "_" + _camera.name + "_MotionBlurTmpCam";
                 GameObject go = GameObject.Find (name);
                 if (null == go) // couldn't find, recreate
                     tmpCam = new GameObject (name, typeof (Camera));

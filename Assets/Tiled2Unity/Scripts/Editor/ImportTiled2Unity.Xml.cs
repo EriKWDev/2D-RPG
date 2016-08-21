@@ -28,7 +28,7 @@ namespace Tiled2Unity
             XDocument xml = importBehaviour.XmlDocument;
             if (xml == null)
             {
-                Debug.LogError(String.Format("GameObject {0} not successfully initialized. Is it left over from a previous import. Try removing from scene are re-importing {1}.", importBehaviour.gameObject.name, xmlPath));
+				Debug.LogError(String.Format("GameObject {0} not successfully initialized. Is it left over from a previous import. Try removing from scene are re-importing {1}.", importBehaviour.gameObject.name, xmlPath));
                 return;
             }
 

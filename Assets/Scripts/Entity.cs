@@ -6,29 +6,13 @@ public class Entity : MonoBehaviour {
 
 	public bool activateByKey = true;
 	public KeyCode activationKey = KeyCode.E;
-	public string name;
-
-	Dialogue dialogue;
-
+	public string objectName = "";
 	bool playerIsWithinRadius;
-
-	void Start () {
-		dialogue = new Dialogue ();
-		dialogue.monologue = true;
-		List<Dialogue.Speaker> speaker = new List<Dialogue.Speaker> ();
-		List<Dialogue.Line> line = new List<Dialogue.Line> ();
-		line.Add (new Dialogue.Line ("It's a " + name, 25f, true, false, speaker[0], false, 0f, null));
-		if (name == "") {
-			name = gameObject.name;
-		}
-		speaker.Add (new Dialogue.Speaker (name, line, dialogue));
-		dialogue.speakers = speaker;
-	}
 
 	void Update () {
 		if (playerIsWithinRadius) {
 			if (activateByKey) {
-				if (Input.GetKeyDown (activationKey) && GameObject.FindGameObjectWithTag ("Player").GetComponent<DialogueReader> ().isInDialogue == false) {
+				if (Input.GetKeyDown (activationKey)) {
 					Activate ();
 				}
 			} else {
@@ -42,7 +26,7 @@ public class Entity : MonoBehaviour {
 	}
 
 	void Activate () {
-		GameObject.FindGameObjectWithTag ("Player").GetComponent<DialogueReader> ().ReadDialogue (dialogue);
+
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {

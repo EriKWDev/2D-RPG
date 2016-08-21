@@ -35,7 +35,7 @@ namespace Com.LuisPedroFonseca.ProCamera2D
 
             for (int i = 0; i < CameraTargets.Count; i++)
             {
-                var railTransform = new GameObject(CameraTargets[i].TargetTransform.name + "_OnRails").transform;
+				var railTransform = new GameObject(CameraTargets[i].TargetTransform.name + "_OnRails").transform;
                 _cameraTargetsOnRails.Add(
                     CameraTargets[i],
                     railTransform
@@ -116,7 +116,7 @@ namespace Com.LuisPedroFonseca.ProCamera2D
 
             CameraTargets.Add(newCameraTarget);
 
-            var railTransform = new GameObject(targetTransform.name + "_OnRails").transform;
+			var railTransform = new GameObject(targetTransform.name + "_OnRails").transform;
 
             _cameraTargetsOnRails.Add(
                 newCameraTarget,
