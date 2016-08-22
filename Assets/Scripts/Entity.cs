@@ -22,7 +22,8 @@ public class Entity : MonoBehaviour {
 	}
 
 	void LateUpdate () {
-		GetComponent<SpriteRenderer> ().sortingOrder = (int)(transform.position.y * -1);
+		SpriteRenderer myRenderer = GetComponent<SpriteRenderer> ();
+		myRenderer.sortingOrder = (int)Camera.main.WorldToScreenPoint (myRenderer.bounds.center).y * -1;
 	}
 
 	void Activate () {

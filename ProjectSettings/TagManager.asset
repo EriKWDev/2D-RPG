@@ -53,7 +53,7 @@ TagManager:
   - name: Map
     uniqueID: 3274552157
     locked: 0
-  - name: Player and NPCs
+  - name: Player, NPCs and Entities
     uniqueID: 995506767
     locked: 0
   - name: Decorations2

@@ -34,13 +34,8 @@ public class NPCBehaviour : MonoBehaviour {
 
 	void FixSortingLayer () {
 		SpriteRenderer myRenderer = GetComponent<SpriteRenderer> ();
-		myRenderer.sortingOrder = (int)(transform.position.y * -1);
-		float playerY = player.transform.position.y;
-		if (playerY < transform.position.y) {
-			myRenderer.sortingOrder = player.GetComponent<SpriteRenderer> ().sortingOrder - 1;
-		} else if (playerY > transform.position.y) {
-			myRenderer.sortingOrder = player.GetComponent<SpriteRenderer> ().sortingOrder + 1;
-		}
+
+		myRenderer.sortingOrder = (int)Camera.main.WorldToScreenPoint (myRenderer.bounds.min).y * -1;
 	}
 
 	void Activate () {

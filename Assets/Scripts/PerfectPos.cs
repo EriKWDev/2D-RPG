@@ -6,6 +6,10 @@ public class PerfectPos : MonoBehaviour {
 
 	void LateUpdate () {
 		transform.position = CoordinateToPixelPerfectPosition ((Vector2)transform.position);
+		SpriteRenderer myRenderer = GetComponent<SpriteRenderer> ();
+
+		if(myRenderer != null)
+			myRenderer.sortingOrder = (int)Camera.main.WorldToScreenPoint (myRenderer.bounds.min).y * -1;
 	}
 
 	public float CoordinateToPixelPerfectPosition (float coord) {

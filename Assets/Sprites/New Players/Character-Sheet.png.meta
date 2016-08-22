@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f258111de3ad6cc4ea22c7ac265b7f8e
-timeCreated: 1471789828
+timeCreated: 1471906896
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -77,6 +77,21 @@ TextureImporter:
     21300140: Character-Sheet_46
     21300142: Character-Sheet_47
     21300144: Character-Sheet_48
+    21300146: Character-Sheet_49
+    21300148: Character-Sheet_50
+    21300150: Character-Sheet_51
+    21300152: Character-Sheet_52
+    21300154: Character-Sheet_53
+    21300156: Character-Sheet_54
+    21300158: Character-Sheet_55
+    21300160: Character-Sheet_56
+    21300162: Character-Sheet_57
+    21300164: Character-Sheet_58
+    21300166: Character-Sheet_59
+    21300168: Character-Sheet_60
+    21300170: Character-Sheet_61
+    21300172: Character-Sheet_62
+    21300174: Character-Sheet_63
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -92,7 +107,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   grayScaleToAlpha: 0
   generateCubemap: 0
   cubemapConvolution: 0
@@ -103,7 +118,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: 0
-    aniso: 16
+    aniso: 0
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -551,10 +566,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 6, y: 8}
-        - {x: -8, y: 8}
-        - {x: -14, y: -3}
-        - {x: -14, y: -9}
-        - {x: -6, y: -16}
+        - {x: -9, y: 8}
+        - {x: -15, y: 2}
+        - {x: -15, y: -8}
+        - {x: -9, y: -16}
         - {x: 6, y: -16}
         - {x: 8, y: -14}
         - {x: 8, y: 2}
@@ -569,13 +584,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -15, y: 8}
-        - {x: -16, y: 7}
-        - {x: -16, y: -9}
+      - - {x: -7, y: 8}
+        - {x: -15, y: 2}
+        - {x: -15, y: -8}
         - {x: -10, y: -16}
-        - {x: 8, y: -16}
-        - {x: 8, y: 6}
-        - {x: 6, y: 8}
+        - {x: 6, y: -16}
+        - {x: 8, y: -15}
+        - {x: 8, y: 1}
+        - {x: 5, y: 8}
     - name: Character-Sheet_39
       rect:
         serializedVersion: 2
@@ -587,13 +603,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -3, y: 7}
+      - - {x: -2, y: 7}
         - {x: -12, y: 2}
-        - {x: -12, y: -8}
-        - {x: -6, y: -16}
-        - {x: 6, y: -16}
-        - {x: 8, y: -14}
-        - {x: 8, y: 0}
+        - {x: -12, y: -11}
+        - {x: -11, y: -16}
+        - {x: 8, y: -16}
+        - {x: 8, y: 3}
         - {x: 4, y: 7}
     - name: Character-Sheet_40
       rect:
@@ -608,11 +623,11 @@ TextureImporter:
       outline:
       - - {x: 3, y: 8}
         - {x: 0, y: 8}
-        - {x: -7, y: 5}
-        - {x: -12, y: -4}
-        - {x: -12, y: -6}
-        - {x: -7, y: -14}
-        - {x: -5, y: -16}
+        - {x: -7, y: 4}
+        - {x: -12, y: -2}
+        - {x: -12, y: -7}
+        - {x: -8, y: -15}
+        - {x: -6, y: -16}
         - {x: 6, y: -16}
         - {x: 8, y: -14}
         - {x: 8, y: 1}
@@ -627,14 +642,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 8}
-        - {x: -8, y: 5}
-        - {x: -13, y: 0}
-        - {x: -13, y: -14}
+      - - {x: -9, y: 8}
+        - {x: -13, y: 5}
+        - {x: -13, y: -6}
         - {x: -8, y: -16}
         - {x: 8, y: -16}
-        - {x: 8, y: 1}
-        - {x: 2, y: 8}
+        - {x: 8, y: 0}
+        - {x: 6, y: 8}
     - name: Character-Sheet_42
       rect:
         serializedVersion: 2
@@ -646,12 +660,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 7}
+      - - {x: -7, y: 7}
+        - {x: -8, y: 6}
         - {x: -8, y: -16}
-        - {x: 7, y: -16}
+        - {x: 9, y: -16}
         - {x: 15, y: -8}
         - {x: 15, y: 2}
-        - {x: 7, y: 7}
+        - {x: 11, y: 7}
     - name: Character-Sheet_43
       rect:
         serializedVersion: 2
@@ -663,13 +678,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -7, y: 8}
-        - {x: -8, y: 7}
-        - {x: -8, y: -16}
+      - - {x: -6, y: 8}
+        - {x: -8, y: 4}
+        - {x: -8, y: -15}
+        - {x: -7, y: -16}
         - {x: 11, y: -16}
-        - {x: 12, y: -12}
-        - {x: 12, y: 0}
-        - {x: 10, y: 8}
+        - {x: 12, y: -8}
+        - {x: 12, y: 3}
+        - {x: 8, y: 8}
     - name: Character-Sheet_44
       rect:
         serializedVersion: 2
@@ -681,13 +697,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -5, y: 8}
-        - {x: -8, y: 6}
-        - {x: -8, y: -16}
+      - - {x: -7, y: 8}
+        - {x: -8, y: 5}
+        - {x: -8, y: -14}
+        - {x: -6, y: -16}
         - {x: 7, y: -16}
-        - {x: 13, y: -6}
-        - {x: 13, y: -1}
-        - {x: 6, y: 8}
+        - {x: 12, y: -6}
+        - {x: 12, y: 5}
+        - {x: 9, y: 8}
     - name: Character-Sheet_45
       rect:
         serializedVersion: 2
@@ -701,10 +718,11 @@ TextureImporter:
       outline:
       - - {x: -1, y: 8}
         - {x: -8, y: 6}
-        - {x: -8, y: -16}
+        - {x: -8, y: -15}
+        - {x: -7, y: -16}
         - {x: 7, y: -16}
-        - {x: 13, y: -6}
-        - {x: 13, y: 2}
+        - {x: 13, y: -7}
+        - {x: 13, y: 3}
         - {x: 8, y: 8}
     - name: Character-Sheet_46
       rect:
@@ -717,14 +735,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0, y: 8}
-        - {x: -2, y: 8}
-        - {x: -8, y: 2}
-        - {x: -8, y: -16}
-        - {x: 10, y: -16}
-        - {x: 12, y: -8}
-        - {x: 12, y: -2}
-        - {x: 4, y: 6}
+      - - {x: 7, y: 8}
+        - {x: -1, y: 8}
+        - {x: -8, y: 6}
+        - {x: -8, y: -14}
+        - {x: -6, y: -16}
+        - {x: 5, y: -16}
+        - {x: 7, y: -14}
+        - {x: 12, y: -7}
+        - {x: 12, y: 1}
     - name: Character-Sheet_47
       rect:
         serializedVersion: 2
@@ -737,19 +756,207 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -1, y: 7}
-        - {x: -6, y: 3}
         - {x: -8, y: 0}
-        - {x: -8, y: -15}
-        - {x: -7, y: -16}
-        - {x: 8, y: -16}
-        - {x: 12, y: -13}
-        - {x: 12, y: 1}
-        - {x: 10, y: 7}
+        - {x: -8, y: -16}
+        - {x: 7, y: -16}
+        - {x: 12, y: -6}
+        - {x: 12, y: 0}
+        - {x: 8, y: 4}
     - name: Character-Sheet_48
       rect:
         serializedVersion: 2
         x: 208
         y: 480
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 378
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.68745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 7.001587}
+        - {x: -9, y: 7.001587}
+        - {x: -11, y: 6.001587}
+        - {x: -14, y: -5.998413}
+        - {x: -14, y: -19.998413}
+        - {x: -13, y: -20.998413}
+        - {x: -1, y: -20.998413}
+        - {x: 6, y: -19.998413}
+        - {x: 8, y: -13.998413}
+        - {x: 8, y: 0.0015869141}
+    - name: Character-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 378
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.68745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 7.001587}
+        - {x: -8, y: 7.001587}
+        - {x: -8, y: -21.998413}
+        - {x: 10, y: -21.998413}
+        - {x: 11, y: -19.998413}
+        - {x: 11, y: 5.001587}
+    - name: Character-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 378
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.68745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 7.001587}
+        - {x: -8, y: -16.998413}
+        - {x: -5, y: -18.998413}
+        - {x: 1, y: -20.998413}
+        - {x: 11, y: -20.998413}
+        - {x: 13, y: -19.998413}
+        - {x: 13, y: -3.998413}
+        - {x: 12, y: 4.001587}
+        - {x: 8, y: 7.001587}
+    - name: Character-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 448
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Character-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
         width: 16
         height: 32
       alignment: 0

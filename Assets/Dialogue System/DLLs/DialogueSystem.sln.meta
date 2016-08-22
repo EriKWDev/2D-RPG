@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: 630bf89a42bf760458299c96a71e7f04
-labels:
-- Cutscene
-- Sequencer
-- Usequencer
+guid: c895612a36c65b941b00937d78e67ae8
+timeCreated: 1471888481
+licenseType: Free
 DefaultImporter:
   userData: 
   assetBundleName: 

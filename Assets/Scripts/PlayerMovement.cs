@@ -6,9 +6,11 @@ public class PlayerMovement : MonoBehaviour {
 
 	public Player currentPlayer = Player.Angie;
 	Animator playerAnimator;
+	Rigidbody2D myRigidbody;
 
 	public enum Player {
 		Angie,
+		BedTimeAngie,
 		KillerAngie,
 		Pudding,
 		FancyPudding,
@@ -21,10 +23,13 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Start () {
 		playerAnimator = GetComponent<Animator> ();
+		myRigidbody = GetComponent<Rigidbody2D> ();
 	}
 
 	void LateUpdate () {
-		GetComponent<SpriteRenderer> ().sortingOrder = (int)CoordinateToPixelPerfectPosition (transform.position.y * -1);
+		SpriteRenderer myRenderer = GetComponent<SpriteRenderer> ();
+
+		myRenderer.sortingOrder = (int)Camera.main.WorldToScreenPoint (myRenderer.bounds.min).y * -1;
 	}
 
 	void Update () {
@@ -44,28 +49,41 @@ public class PlayerMovement : MonoBehaviour {
 
 			if (input.x > 0) {
 				direction = "right";
+				playerAnimator.SetFloat ("direction", 2f);
 			} else if (input.x < 0) {
 				direction = "left";
+				playerAnimator.SetFloat ("direction", 1f);
 			}
 			if (input.y > 0) {
 				direction = "up";
+				playerAnimator.SetFloat ("direction", 3f);
 			} else if (input.y < 0) {
 				direction = "down";
+				playerAnimator.SetFloat ("direction", 0f);
 			}
-
-			// print (direction);
 		}
 
-		// Collider2D[] tmp = Physics2D.OverlapCircleAll ((Vector2)transform.position, 0.5f);
-
-		if(canMove)
+		if (canMove) {
+			//myRigidbody.MovePosition (CoordinateToPixelPerfectPosition (transform.position + new Vector3 (velocity.x, velocity.y, 0f)));
+			//myRigidbody.velocity = velocity * 5f;
 			transform.Translate (CoordinateToPixelPerfectPosition (velocity));
+		}
 	}
 
 	void UpdatePlayerSprite () {
 		switch (currentPlayer) {
 		case Player.Angie:
 			playerAnimator.SetBool ("isAngie", true);
+			playerAnimator.SetBool ("isBedTimeAngie", false);
+			playerAnimator.SetBool ("isKillerAngie", false);
+			playerAnimator.SetBool ("isPudding", false);
+			playerAnimator.SetBool ("isFancyPudding", false);
+			playerAnimator.SetBool ("isProfessor", false);
+			break;
+
+		case Player.BedTimeAngie:
+			playerAnimator.SetBool ("isAngie", false);
+			playerAnimator.SetBool ("isBedTimeAngie", true);
 			playerAnimator.SetBool ("isKillerAngie", false);
 			playerAnimator.SetBool ("isPudding", false);
 			playerAnimator.SetBool ("isFancyPudding", false);
@@ -74,6 +92,7 @@ public class PlayerMovement : MonoBehaviour {
 
 		case Player.KillerAngie: 
 			playerAnimator.SetBool ("isAngie", false);
+			playerAnimator.SetBool ("isBedTimeAngie", false);
 			playerAnimator.SetBool ("isKillerAngie", true);
 			playerAnimator.SetBool ("isPudding", false);
 			playerAnimator.SetBool ("isFancyPudding", false);
@@ -82,6 +101,7 @@ public class PlayerMovement : MonoBehaviour {
 
 		case Player.Pudding:
 			playerAnimator.SetBool ("isAngie", false);
+			playerAnimator.SetBool ("isBedTimeAngie", false);
 			playerAnimator.SetBool ("isKillerAngie", false);
 			playerAnimator.SetBool ("isPudding", true);
 			playerAnimator.SetBool ("isFancyPudding", false);
@@ -90,6 +110,7 @@ public class PlayerMovement : MonoBehaviour {
 
 		case Player.FancyPudding:
 			playerAnimator.SetBool ("isAngie", true);
+			playerAnimator.SetBool ("isBedTimeAngie", false);
 			playerAnimator.SetBool ("isKillerAngie", false);
 			playerAnimator.SetBool ("isPudding", false);
 			playerAnimator.SetBool ("isFancyPudding", true);
@@ -98,21 +119,24 @@ public class PlayerMovement : MonoBehaviour {
 
 		case Player.Professor:
 			playerAnimator.SetBool ("isAngie", false);
+			playerAnimator.SetBool ("isBedTimeAngie", false);
 			playerAnimator.SetBool ("isKillerAngie", false);
 			playerAnimator.SetBool ("isPudding", false);
 			playerAnimator.SetBool ("isFancyPudding", false);
 			playerAnimator.SetBool ("isProfessor", true);
 			break;
 		}
+
+		playerAnimator.SetBool ("isPressingE", Input.GetKey (KeyCode.E));
 	}
 
-	void OnTriggerEnter2D (Collider2D other) {
-		print (other.name);
-		if (other.gameObject.tag == "Collisions") {
-			canMove = false;
+	void OnCollisionEnter2D (Collision2D other) {
+		print (other.gameObject.name);
+		if (other.gameObject.tag == "Colliders") {
+			canMove = true;
 		}
 	}
-
+		
 	public bool IsFacing (GameObject other) {
 		return false;
 	}
@@ -122,6 +146,10 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	public Vector2 CoordinateToPixelPerfectPosition (Vector2 coord) {
+		return new Vector2 (Mathf.Round (coord.x * 16f) / 16f, Mathf.Round (coord.y * 16f) / 16f);
+	}
+
+	public Vector2 CoordinateToPixelPerfectPosition (Vector3 coord) {
 		return new Vector2 (Mathf.Round (coord.x * 16f) / 16f, Mathf.Round (coord.y * 16f) / 16f);
 	}
 }
