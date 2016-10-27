@@ -67,6 +67,7 @@ public class PlayerMovement : MonoBehaviour {
 			//myRigidbody.MovePosition (CoordinateToPixelPerfectPosition (transform.position + new Vector3 (velocity.x, velocity.y, 0f)));
 			//myRigidbody.velocity = velocity * 5f;
 			transform.Translate (CoordinateToPixelPerfectPosition (velocity));
+			//transform.position = PixelPerfect.RoundToArtPixelGrid (transform.position + new Vector3 (velocity.x, velocity.y, 0f));
 		}
 	}
 

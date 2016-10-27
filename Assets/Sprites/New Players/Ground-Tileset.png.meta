@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2e036741c4b50b24d89becbd80e60375
-timeCreated: 1471902349
+timeCreated: 1472374485
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -15,6 +15,17 @@ TextureImporter:
     21300016: Bottle2
     21300018: PaperTrash
     21300020: Umbrella
+    21300022: Painting
+    21300024: Left-Empty-Bookshelf
+    21300026: Right-Empty-Bookshelf
+    21300028: Center-Empty-Bookshelf01
+    21300030: Center-Empty-Bookshelf02
+    21300032: Center-Empty-Bookshelf03
+    21300034: Left-Filled-Bookshelf
+    21300036: Right-Filled-Bookshelf
+    21300038: Center-Filled-Bookshelf01
+    21300040: Center-Filled-Bookshelf02
+    21300042: Center-Filled-Bookshelf03
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,135 +72,127 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Radio
+    - name: Painting
       rect:
         serializedVersion: 2
-        x: 65
-        y: 432
+        x: 481
+        y: 320
         width: 14
         height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: can1
+    - name: Left-Empty-Bookshelf
       rect:
         serializedVersion: 2
-        x: 81
-        y: 433
-        width: 4
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: can2
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 433
-        width: 4
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: can3
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 433
-        width: 4
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: can4
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 439
-        width: 4
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: can5
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 439
-        width: 4
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: can6
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 439
-        width: 4
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: Bottle1
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 421
-        width: 5
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: Bottle2
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 417
-        width: 10
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: PaperTrash
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 421
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: Umbrella
-      rect:
-        serializedVersion: 2
-        x: 84
+        x: 432
         y: 348
-        width: 34
-        height: 52
+        width: 16
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 2, y: 15}
-        - {x: -9, y: 15}
-        - {x: -17, y: 9}
-        - {x: -17, y: -25}
-        - {x: -12, y: -26}
-        - {x: 17, y: -26}
-        - {x: 17, y: 9}
-        - {x: 8, y: 13}
+      outline: []
+    - name: Right-Empty-Bookshelf
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 348
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Center-Empty-Bookshelf01
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 348
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Center-Empty-Bookshelf02
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 348
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Center-Empty-Bookshelf03
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 348
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Left-Filled-Bookshelf
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 381
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Right-Filled-Bookshelf
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 381
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Center-Filled-Bookshelf01
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 381
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Center-Filled-Bookshelf02
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 381
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Center-Filled-Bookshelf03
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 381
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
