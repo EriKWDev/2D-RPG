@@ -13,12 +13,14 @@ public class CameraBounds : MonoBehaviour {
 	public int scaling = 1;
 
 	void Start () {
-		currentRoomMinBounds = currentRoomBounds.bounds.min;
-		currentRoomMaxBounds = currentRoomBounds.bounds.max;
+		if (currentRoomBounds != null) {
+			currentRoomMinBounds = currentRoomBounds.bounds.min;
+			currentRoomMaxBounds = currentRoomBounds.bounds.max;
+		}
 
 		halfHeight = Camera.main.orthographicSize;
 		halfWidth = halfHeight * Screen.width / Screen.height;
-
+			
 		//playerObject = GameObject.FindGameObjectWithTag ("Player");
 		Camera.main.orthographicSize = (Screen.height / 16f / 2f) / scaling;
 	}
