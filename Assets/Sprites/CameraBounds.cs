@@ -21,7 +21,7 @@ public class CameraBounds : MonoBehaviour {
 		halfHeight = Camera.main.orthographicSize;
 		halfWidth = halfHeight * Screen.width / Screen.height;
 			
-		//playerObject = GameObject.FindGameObjectWithTag ("Player");
+		//playerObject = GameObject.FindGameObjectWithTag ("Player"); 
 		Camera.main.orthographicSize = (Screen.height / 16f / 2f) / scaling;
 	}
 

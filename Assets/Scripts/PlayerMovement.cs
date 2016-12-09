@@ -14,7 +14,8 @@ public class PlayerMovement : MonoBehaviour {
 		KillerAngie,
 		Pudding,
 		FancyPudding,
-		Professor
+		Professor,
+		MrFancy
 	}
 
 	public float movementSpeed = 1f;
@@ -33,7 +34,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void Update () {
-		UpdatePlayerSprite ();
+		UpdateAnimatorValues ();
 		Walk ();
 	}
 
@@ -71,62 +72,14 @@ public class PlayerMovement : MonoBehaviour {
 		}
 	}
 
-	void UpdatePlayerSprite () {
-		switch (currentPlayer) {
-		case Player.Angie:
-			playerAnimator.SetBool ("isAngie", true);
-			playerAnimator.SetBool ("isBedTimeAngie", false);
-			playerAnimator.SetBool ("isKillerAngie", false);
-			playerAnimator.SetBool ("isPudding", false);
-			playerAnimator.SetBool ("isFancyPudding", false);
-			playerAnimator.SetBool ("isProfessor", false);
-			break;
-
-		case Player.BedTimeAngie:
-			playerAnimator.SetBool ("isAngie", false);
-			playerAnimator.SetBool ("isBedTimeAngie", true);
-			playerAnimator.SetBool ("isKillerAngie", false);
-			playerAnimator.SetBool ("isPudding", false);
-			playerAnimator.SetBool ("isFancyPudding", false);
-			playerAnimator.SetBool ("isProfessor", false);
-			break;
-
-		case Player.KillerAngie: 
-			playerAnimator.SetBool ("isAngie", false);
-			playerAnimator.SetBool ("isBedTimeAngie", false);
-			playerAnimator.SetBool ("isKillerAngie", true);
-			playerAnimator.SetBool ("isPudding", false);
-			playerAnimator.SetBool ("isFancyPudding", false);
-			playerAnimator.SetBool ("isProfessor", false);
-			break;
-
-		case Player.Pudding:
-			playerAnimator.SetBool ("isAngie", false);
-			playerAnimator.SetBool ("isBedTimeAngie", false);
-			playerAnimator.SetBool ("isKillerAngie", false);
-			playerAnimator.SetBool ("isPudding", true);
-			playerAnimator.SetBool ("isFancyPudding", false);
-			playerAnimator.SetBool ("isProfessor", false);
-			break;
-
-		case Player.FancyPudding:
-			playerAnimator.SetBool ("isAngie", true);
-			playerAnimator.SetBool ("isBedTimeAngie", false);
-			playerAnimator.SetBool ("isKillerAngie", false);
-			playerAnimator.SetBool ("isPudding", false);
-			playerAnimator.SetBool ("isFancyPudding", true);
-			playerAnimator.SetBool ("isProfessor", false);
-			break;
-
-		case Player.Professor:
-			playerAnimator.SetBool ("isAngie", false);
-			playerAnimator.SetBool ("isBedTimeAngie", false);
-			playerAnimator.SetBool ("isKillerAngie", false);
-			playerAnimator.SetBool ("isPudding", false);
-			playerAnimator.SetBool ("isFancyPudding", false);
-			playerAnimator.SetBool ("isProfessor", true);
-			break;
-		}
+	void UpdateAnimatorValues () {
+		playerAnimator.SetBool ("isAngie", (currentPlayer == Player.Angie ? true : false));
+		playerAnimator.SetBool ("isBedTimeAngie", (currentPlayer == Player.BedTimeAngie ? true : false));
+		playerAnimator.SetBool ("isKillerAngie", (currentPlayer == Player.KillerAngie ? true : false));
+		playerAnimator.SetBool ("isPudding", (currentPlayer == Player.Pudding ? true : false));
+		playerAnimator.SetBool ("isFancyPudding", (currentPlayer == Player.FancyPudding ? true : false));
+		playerAnimator.SetBool ("isProfessor", (currentPlayer == Player.Professor ? true : false));
+		playerAnimator.SetBool ("isMrFancy", (currentPlayer == Player.MrFancy ? true : false));
 
 		playerAnimator.SetBool ("isPressingE", Input.GetKey (KeyCode.E));
 	}
