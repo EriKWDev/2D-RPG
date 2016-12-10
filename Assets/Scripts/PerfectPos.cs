@@ -4,8 +4,17 @@ using System.Collections;
 [ExecuteInEditMode]
 public class PerfectPos : MonoBehaviour {
 
+	public bool zPos = true;
+
 	void LateUpdate () {
-		transform.position = CoordinateToPixelPerfectPosition ((Vector2)transform.position);
+		if (zPos) {
+			transform.position = CoordinateToPixelPerfectPosition ((Vector2)transform.position);
+		} else {
+			Vector3 pos = transform.position;
+			pos.x = CoordinateToPixelPerfectPosition (pos.x);
+			pos.y = CoordinateToPixelPerfectPosition (pos.y);
+			transform.position = pos;
+		}
 		SpriteRenderer myRenderer = GetComponent<SpriteRenderer> ();
 
 		if(myRenderer != null)
