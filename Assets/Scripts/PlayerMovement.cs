@@ -4,9 +4,10 @@ using System.Collections;
 [RequireComponent(typeof (Animator))]
 public class PlayerMovement : MonoBehaviour {
 
-	public Player currentPlayer = Player.Angie;
+	public Player currentPlayer = Player.MrFancy;
 	Animator playerAnimator;
 	Rigidbody2D myRigidbody;
+	public bool gridMove = true;
 
 	public enum Player {
 		Angie,
@@ -40,13 +41,20 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Walk () {
 		Vector2 input = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
-		Vector2 velocity = input * Time.deltaTime * movementSpeed;
 
-		playerAnimator.SetBool ("isWalking", input != Vector2.zero ? true : false);
-		if (input != Vector2.zero) {
+		if (gridMove) {
+			if (Mathf.Abs(input.x) > Mathf.Abs(input.y)) {
+				input.y = 0;
+			} else {
+				input.x = 0;
+			}
+		}
+
+		playerAnimator.SetBool ("isWalking", (gridMove == true ? isMoving : (input != Vector2.zero ? true : false)));
+
+		if (gridMove ? input != Vector2.zero && !isMoving : input != Vector2.zero) {
 			playerAnimator.SetFloat ("inputX", input.x);
 			playerAnimator.SetFloat ("inputY", input.y);
-
 
 			if (input.x > 0) {
 				direction = "right";
@@ -64,12 +72,38 @@ public class PlayerMovement : MonoBehaviour {
 			}
 		}
 
-		if (canMove) {
-			//myRigidbody.MovePosition (CoordinateToPixelPerfectPosition (transform.position + new Vector3 (velocity.x, velocity.y, 0f)));
-			//myRigidbody.velocity = velocity * 5f;
-			transform.Translate (CoordinateToPixelPerfectPosition (velocity));
-			//transform.position = PixelPerfect.RoundToArtPixelGrid (transform.position + new Vector3 (velocity.x, velocity.y, 0f));
+		if (!gridMove) {
+			Vector2 velocity = Time.deltaTime * input * movementSpeed;
+			if (canMove) {
+				//myRigidbody.MovePosition (CoordinateToPixelPerfectPosition (transform.position + new Vector3 (velocity.x, velocity.y, 0f)));
+				//myRigidbody.velocity = velocity * 5f;
+				transform.Translate (CoordinateToPixelPerfectPosition (velocity));
+				//transform.position = PixelPerfect.RoundToArtPixelGrid (transform.position + new Vector3 (velocity.x, velocity.y, 0f));
+			}
+		} else if (!isMoving && input != Vector2.zero) {
+			StartCoroutine (GridWalk (input));
 		}
+	}
+
+	private float t = 0f;
+	private float gridSize = 1f;
+	private float factor = 1f;
+	public bool isMoving = false;
+	private Vector2 startPosition = Vector2.zero;
+	private Vector2 endPosition = Vector2.zero;
+
+	IEnumerator GridWalk (Vector2 input) {
+		isMoving = true;
+		startPosition = transform.position;
+		t = 0;
+		endPosition = startPosition + input;
+
+		while (t < 1f) {
+			t += Time.deltaTime * (movementSpeed/gridSize) * factor;
+			transform.position = Vector2.MoveTowards(startPosition, endPosition, t);
+			yield return null;
+		}
+		isMoving = false;
 	}
 
 	void UpdateAnimatorValues () {

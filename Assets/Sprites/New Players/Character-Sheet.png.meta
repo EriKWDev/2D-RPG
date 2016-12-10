@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f258111de3ad6cc4ea22c7ac265b7f8e
-timeCreated: 1481104304
+timeCreated: 1481400039
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -104,6 +104,8 @@ TextureImporter:
     21300194: Character-Sheet_73
     21300196: Character-Sheet_74
     21300198: Character-Sheet_75
+    21300200: MoneyBag
+    21300202: GrassTest
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -1135,6 +1137,32 @@ TextureImporter:
         y: 368
         width: 16
         height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MoneyBag
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 353
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GrassTest
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 368
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
