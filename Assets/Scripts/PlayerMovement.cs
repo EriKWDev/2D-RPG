@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
 	Animator playerAnimator;
 	Rigidbody2D myRigidbody;
 	public bool gridMove = true;
+	private bool animate = false;
 
 	public enum Player {
 		Angie,
@@ -22,8 +23,11 @@ public class PlayerMovement : MonoBehaviour {
 	public float movementSpeed = 1f;
 	private string direction = "up";
 	private bool canMove = true;
+	public float timer = 0.15f;
+	private float t2 = 0f;
 
 	void Start () {
+		t2 = timer;
 		playerAnimator = GetComponent<Animator> ();
 		myRigidbody = GetComponent<Rigidbody2D> ();
 	}
@@ -42,15 +46,15 @@ public class PlayerMovement : MonoBehaviour {
 	void Walk () {
 		Vector2 input = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
 
-		if (gridMove) {
-			if (Mathf.Abs(input.x) > Mathf.Abs(input.y)) {
-				input.y = 0;
-			} else {
-				input.x = 0;
-			}
+		//if (gridMove) {
+		if (Mathf.Abs(input.x) > Mathf.Abs(input.y)) {
+			input.y = 0;
+		} else {
+			input.x = 0;
 		}
+		//}
 
-		playerAnimator.SetBool ("isWalking", (gridMove == true ? isMoving : (input != Vector2.zero ? true : false)));
+		playerAnimator.SetBool ("isWalking", ((input != Vector2.zero ? true : false)));
 
 		if (gridMove ? input != Vector2.zero && !isMoving : input != Vector2.zero) {
 			playerAnimator.SetFloat ("inputX", input.x);
@@ -72,6 +76,14 @@ public class PlayerMovement : MonoBehaviour {
 			}
 		}
 
+		if (input != Vector2.zero) {
+			t2 -= Time.deltaTime;
+		} else {
+			t2 = timer;
+		}
+
+		animate = (t2 <= 0f ? true : false);
+
 		if (!gridMove) {
 			Vector2 velocity = Time.deltaTime * input * movementSpeed;
 			if (canMove) {
@@ -80,12 +92,12 @@ public class PlayerMovement : MonoBehaviour {
 				transform.Translate (CoordinateToPixelPerfectPosition (velocity));
 				//transform.position = PixelPerfect.RoundToArtPixelGrid (transform.position + new Vector3 (velocity.x, velocity.y, 0f));
 			}
-		} else if (!isMoving && input != Vector2.zero) {
+		} else if (!isMoving && input != Vector2.zero && animate) {
 			StartCoroutine (GridWalk (input));
 		}
 	}
 
-	private float t = 0f;
+	private float t1 = 0f;
 	private float gridSize = 1f;
 	private float factor = 1f;
 	public bool isMoving = false;
@@ -94,13 +106,14 @@ public class PlayerMovement : MonoBehaviour {
 
 	IEnumerator GridWalk (Vector2 input) {
 		isMoving = true;
+		playerAnimator.SetBool ("isWalking", (gridMove == true ? isMoving : (input != Vector2.zero ? true : false)));
 		startPosition = transform.position;
-		t = 0;
+		t1 = 0;
 		endPosition = startPosition + input;
 
-		while (t < 1f) {
-			t += Time.deltaTime * (movementSpeed/gridSize) * factor;
-			transform.position = Vector2.MoveTowards(startPosition, endPosition, t);
+		while (t1 < 1f) {
+			t1 += Time.deltaTime * (movementSpeed/gridSize) * factor;
+			transform.position = Vector2.MoveTowards(startPosition, endPosition, t1);
 			yield return null;
 		}
 		isMoving = false;
