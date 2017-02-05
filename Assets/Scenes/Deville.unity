@@ -266,7 +266,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.209, g: 0.192698, b: 0.20560375, a: 1}
+  m_BackGroundColor: {r: 0.16911763, g: 0.13554281, b: 0.16212288, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -277,7 +277,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.4375
+  orthographic size: 5.114583
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -431,7 +431,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 995506767
-  m_SortingOrder: 14786
+  m_SortingOrder: 22194
   m_Sprite: {fileID: 21300176, guid: f258111de3ad6cc4ea22c7ac265b7f8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -802,13 +802,13 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.75
+  orthographic size: 5.625
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 789415c085826454da4d46fed11b2e44, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
@@ -849,8 +849,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxCameraHalfWidthEnabled: 1
   maxCameraHalfHeightEnabled: 1
-  maxCameraHalfWidth: 6.8
-  maxCameraHalfHeight: 5.5
+  maxCameraHalfWidth: 13.28
+  maxCameraHalfHeight: 12.27
   targetDimension: 1
   targetCameraHalfWidth: 5
   targetCameraHalfHeight: 7.16
@@ -923,7 +923,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 640, y: 480}
+  m_SizeDelta: {x: 420, y: 420}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1772622722
 MonoBehaviour:
