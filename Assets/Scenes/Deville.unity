@@ -277,7 +277,11 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
+<<<<<<< Updated upstream
   orthographic size: 5.114583
+=======
+  orthographic size: 3.3333333
+>>>>>>> Stashed changes
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -431,7 +435,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 995506767
+<<<<<<< Updated upstream
   m_SortingOrder: 22194
+=======
+  m_SortingOrder: 22280
+>>>>>>> Stashed changes
   m_Sprite: {fileID: 21300176, guid: f258111de3ad6cc4ea22c7ac265b7f8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -649,7 +657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1462926568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -802,7 +810,11 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
+<<<<<<< Updated upstream
   orthographic size: 5.625
+=======
+  orthographic size: 4.9999995
+>>>>>>> Stashed changes
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -849,11 +861,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxCameraHalfWidthEnabled: 1
   maxCameraHalfHeightEnabled: 1
+<<<<<<< Updated upstream
   maxCameraHalfWidth: 13.28
   maxCameraHalfHeight: 12.27
+=======
+  maxCameraHalfWidth: 9.79
+  maxCameraHalfHeight: 11.88
+>>>>>>> Stashed changes
   targetDimension: 1
   targetCameraHalfWidth: 5
-  targetCameraHalfHeight: 7.16
+  targetCameraHalfHeight: 17.84
   pixelPerfect: 1
   retroSnap: 1
   assetsPixelsPerUnit: 16
@@ -889,7 +906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentRoomBounds: {fileID: 0}
   playerObject: {fileID: 1450259119}
-  scaling: 2
+  scaling: 3
 --- !u!1 &1772622720
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,8 +9,13 @@ RenderTexture:
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
+<<<<<<< Updated upstream
   m_Width: 180
   m_Height: 180
+=======
+  m_Width: 640
+  m_Height: 480
+>>>>>>> Stashed changes
   m_AntiAliasing: 1
   m_DepthFormat: 2
   m_ColorFormat: 0
